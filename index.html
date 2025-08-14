@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gohil Tech Empire - Innovation & Technology Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Gohil Tech Empire</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#directors">Directors</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Welcome to Gohil Tech Empire</h1>
+                <p>Innovation meets excellence in technology solutions</p>
+                <a href="#products" class="cta-button">Explore Our Products</a>
+            </div>
+            <div class="hero-image">
+                <div class="tech-sphere">
+                    <i class="fas fa-rocket"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Gohil Tech Empire</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Gohil Tech Empire is a forward-thinking technology company dedicated to creating innovative solutions that drive business growth and digital transformation. Founded by the visionary Gohil brothers, we combine technical expertise with strategic marketing insights to deliver exceptional products and services.</p>
+                    <p>Our mission is to empower businesses and individuals with cutting-edge technology solutions that simplify complex challenges and unlock new opportunities in the digital age.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>100+</h3>
+                        <p>Products</p>
+                    </div>
+                    <div class="stat">
+                        <h3>2</h3>
+                        <p>Directors</p>
+                    </div>
+                    <div class="stat">
+                        <h3>∞</h3>
+                        <p>Possibilities</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Directors Section -->
+    <section id="directors" class="directors">
+        <div class="container">
+            <h2 class="section-title">Meet Our Directors</h2>
+            <div class="directors-grid">
+                <div class="director-card">
+                    <div class="director-image">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Nikhil Gohil</h3>
+                    <p class="director-role">Technical Director</p>
+                    <p class="director-desc">A seasoned developer with extensive experience in software development and technology architecture. Nikhil brings deep technical expertise and innovative problem-solving skills to drive our product development initiatives.</p>
+                    <div class="director-skills">
+                        <span class="skill-tag">Development</span>
+                        <span class="skill-tag">Architecture</span>
+                        <span class="skill-tag">Innovation</span>
+                    </div>
+                </div>
+                <div class="director-card">
+                    <div class="director-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Vikas Gohil</h3>
+                    <p class="director-role">Marketing Director</p>
+                    <p class="director-desc">A marketing expert with a keen understanding of market dynamics and customer needs. Vikas excels in strategic marketing, brand development, and creating compelling market presence for our products.</p>
+                    <div class="director-skills">
+                        <span class="skill-tag">Marketing</span>
+                        <span class="skill-tag">Strategy</span>
+                        <span class="skill-tag">Branding</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Product Portfolio</h2>
+            <p class="section-subtitle">Discover our comprehensive suite of 100 innovative products</p>
+            
+            <div class="products-filter">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="software">Software</button>
+                <button class="filter-btn" data-category="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-category="web">Web Solutions</button>
+                <button class="filter-btn" data-category="ai">AI & ML</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Connect With Us</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@gohiltechempire.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Innovation Hub, Tech District</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gohil Tech Empire</h3>
+                    <p>Empowering the future through innovative technology solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#directors">Directors</a></li>
+                        <li><a href="#products">Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gohil Tech Empire. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
