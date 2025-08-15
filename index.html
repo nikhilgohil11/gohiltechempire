@@ -19,7 +19,6 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#products">Projects</a></li>
                 <li><a href="#subscribe">Subscribe</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -160,26 +159,28 @@
                     </div>
                 </div>
             </div>
+            <section id="subscribe" class="subscribe">
             <div class="container"></div>
             <h2 class="section-title">.</h2>
             <p class="section-subtitle"></p>
-                    <div class="contact-form">
-                        <div class="newsletter-signup">
-                            <h3>Stay Updated</h3>
-                            <p>Subscribe to our newsletter for the latest updates, project launches, and tech insights.</p>
-                            <form action="https://app.convertkit.com/forms/8435254/subscriptions" method="post" class="convertkit-form">
-                                <div class="form-group">
-                                    <input type="email" name="email_address" placeholder="Enter your email" required>
-                                    <label for="email">Enter your email</label>
-                                </div>
-                                <button type="submit" class="submit-btn">
-                                    <span>Subscribe</span>
-                                    <i class="fas fa-envelope"></i>
-                                </button>
-                            </form>
-                            <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
-                        </div>
+                <div class="contact-form">
+                    <div class="newsletter-signup">
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to our newsletter for the latest updates, project launches, and tech insights.</p>
+                        <form action="https://app.convertkit.com/forms/8435254/subscriptions" method="post" class="convertkit-form">
+                            <div class="form-group">
+                                <input type="email" name="email_address" placeholder="Enter your email" required>
+                                <label for="email">Enter your email</label>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span>Subscribe</span>
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
+                        <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
                     </div>
+                </div>
+            </section>
         </div>
     </section>
 
@@ -191,90 +192,12 @@
             
             <div class="products-filter">
                 <button class="filter-btn active" data-category="all">All Projects</button>
-                <button class="filter-btn" data-category="active">Active</button>
+                <button class="filter-btn" data-category="completed">Active</button>
                 <button class="filter-btn" data-category="failed">Failed</button>
                 <button class="filter-btn" data-category="upcoming">Upcoming</button>
-
             </div>
-
             <div class="products-grid" id="productsGrid">
                 <!-- Products will be dynamically generated here -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Other Say About Us</h2>
-            <p class="section-subtitle"></p>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-content">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Gohil Tech Empire transformed our business operations with their innovative software solutions. The team's expertise and dedication to quality exceeded our expectations."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Sarah Johnson</h4>
-                            <span>CEO, TechCorp Solutions</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-content">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Their mobile app development expertise helped us launch a successful product in record time. The attention to detail and user experience design is outstanding."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Michael Chen</h4>
-                            <span>CTO, InnovateMobile</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="testimonial-content">
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"The AI-powered analytics platform they built for us has revolutionized our decision-making process. It's like having a crystal ball for business insights."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="author-info">
-                            <h4>Emily Rodriguez</h4>
-                            <span>Data Scientist, AnalyticsPro</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -290,34 +213,29 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="https://x.com/nikhilgohil11">@nikhilgohil11</a></li>
+                        <li><a href="https://x.com/vikasgohil212">@vikasgohil212</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#products">Software Development</a></li>
-                        <li><a href="#products">Mobile Apps</a></li>
-                        <li><a href="#products">Web Solutions</a></li>
-                        <li><a href="#products">AI & Machine Learning</a></li>
-                        <li><a href="#products">Consulting</a></li>
-                    </ul>
-                </div>
+
                 <div class="footer-section">
                     <h4>Newsletter</h4>
                     <p>Stay updated with our latest innovations and tech insights.</p>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Enter your email">
-                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                    </div>
+                    <form action="https://app.convertkit.com/forms/8435254/subscriptions" method="post" class="convertkit-form">
+                        <div class="form-group">
+                            <input type="email" name="email_address" placeholder="Enter your email" required>
+                            <label for="footer-email">Enter your email</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                    </form>
+                    <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Gohil Tech Empire. All rights reserved.</p>
+                <p>&copy; 2025 Gohil Tech Empire. All rights reserved.</p>
             </div>
         </div>
     </footer>
