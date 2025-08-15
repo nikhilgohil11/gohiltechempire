@@ -13,14 +13,13 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>Gohil Tech Empire</h2>
+                <h2>GTE</h2>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#directors">Directors</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#products">Projects</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -32,94 +31,170 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- Animated Background Elements -->
+        <div class="hero-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+            <div class="gradient-overlay"></div>
+        </div>
+        
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Welcome to Gohil Tech Empire</h1>
-                <p>Innovation meets excellence in technology solutions</p>
-                <a href="#products" class="cta-button">Explore Our Products</a>
-            </div>
-            <div class="hero-image">
-                <div class="tech-sphere">
-                    <i class="fas fa-rocket"></i>
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span class="badge-text">Journey to</span>
                 </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Build and Launch</span>
+                    <span class="title-line highlight">100 Projects</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    We are turning ambitious ideas into reality.
+                    Each project showcases the power of AI, determination to solve real problems, create new opportunities, and push the boundaries of what's possible.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#products" class="cta-button primary">
+                        <span>Explore Completed Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="cta-button secondary">
+                        <span>Follow our Journey</span>
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1356">0</div>
+                        <div class="stat-label">Users</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="11">0</div>
+                        <div class="stat-label">Done 🚀</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="89">0</div>
+                        <div class="stat-label">More to Go 💪</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="tech-sphere">
+                        <div class="sphere-core">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="sphere-ring ring-1"></div>
+                        <div class="sphere-ring ring-2"></div>
+                        <div class="sphere-ring ring-3"></div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="float-element element-1">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="float-element element-2">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="float-element element-3">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="float-element element-4">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Team Section -->
+    <section id="team" class="team">
         <div class="container">
-            <h2 class="section-title">About Gohil Tech Empire</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Gohil Tech Empire is a forward-thinking technology company dedicated to creating innovative solutions that drive business growth and digital transformation. Founded by the visionary Gohil brothers, we combine technical expertise with strategic marketing insights to deliver exceptional products and services.</p>
-                    <p>Our mission is to empower businesses and individuals with cutting-edge technology solutions that simplify complex challenges and unlock new opportunities in the digital age.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>100+</h3>
-                        <p>Products</p>
+            <h2 class="section-title">Who we are?</h2>
+            <div class="team-grid">
+                <div class="team-member-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-member-image">
+                        <img src="images/building.jpg" alt="Nikhil Gohil" class="profile-picture">
                     </div>
-                    <div class="stat">
-                        <h3>2</h3>
-                        <p>Directors</p>
-                    </div>
-                    <div class="stat">
-                        <h3>∞</h3>
-                        <p>Possibilities</p>
+                    <h3>I'm Nikhil Gohil</h3>
+                    <p class="team-member-role">Building 100 Projects</p>
+                    <p class="team-member-desc">I'm a seasoned developer with extensive experience in software development and technology architecture. I brings deep technical expertise and innovative problem-solving skills to drive our product development initiatives.</p>
+                    <div class="team-member-skills">
+                        <span class="skill-tag">Tech</span>
+                        <span class="skill-tag">Experimenting</span>
+                        <span class="skill-tag">Innovating</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Directors Section -->
-    <section id="directors" class="directors">
-        <div class="container">
-            <h2 class="section-title">Meet Our Directors</h2>
-            <div class="directors-grid">
-                <div class="director-card">
-                    <div class="director-image">
-                        <i class="fas fa-user-tie"></i>
+                <div class="team-member-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-member-image">
+                        <img src="images/launching.jpg" alt="Vikas Gohil" class="profile-picture">
                     </div>
-                    <h3>Nikhil Gohil</h3>
-                    <p class="director-role">Technical Director</p>
-                    <p class="director-desc">A seasoned developer with extensive experience in software development and technology architecture. Nikhil brings deep technical expertise and innovative problem-solving skills to drive our product development initiatives.</p>
-                    <div class="director-skills">
-                        <span class="skill-tag">Development</span>
-                        <span class="skill-tag">Architecture</span>
-                        <span class="skill-tag">Innovation</span>
-                    </div>
-                </div>
-                <div class="director-card">
-                    <div class="director-image">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Vikas Gohil</h3>
-                    <p class="director-role">Marketing Director</p>
-                    <p class="director-desc">A marketing expert with a keen understanding of market dynamics and customer needs. Vikas excels in strategic marketing, brand development, and creating compelling market presence for our products.</p>
-                    <div class="director-skills">
+                    <h3>I'm Vikas Gohil</h3>
+                    <p class="team-member-role">Launching 100 Projects</p>
+                    <p class="team-member-desc">I'm a marketing expert with a keen understanding of market dynamics and customer needs. I excels in strategic marketing, brand development, and creating compelling market presence for our products.</p>
+                    <div class="team-member-skills">
                         <span class="skill-tag">Marketing</span>
                         <span class="skill-tag">Strategy</span>
                         <span class="skill-tag">Branding</span>
                     </div>
                 </div>
             </div>
+            <div class="container"></div>
+            <h2 class="section-title">.</h2>
+            <p class="section-subtitle"></p>
+                    <div class="contact-form">
+                        <div class="newsletter-signup">
+                            <h3>Stay Updated</h3>
+                            <p>Subscribe to our newsletter for the latest updates, project launches, and tech insights.</p>
+                            <form action="https://app.convertkit.com/forms/8435254/subscriptions" method="post" class="convertkit-form">
+                                <div class="form-group">
+                                    <input type="email" name="email_address" placeholder="Enter your email" required>
+                                    <label for="email">Enter your email</label>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <span>Subscribe</span>
+                                    <i class="fas fa-envelope"></i>
+                                </button>
+                            </form>
+                            <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+                        </div>
+                    </div>
         </div>
     </section>
 
     <!-- Products Section -->
     <section id="products" class="products">
         <div class="container">
-            <h2 class="section-title">Our Product Portfolio</h2>
-            <p class="section-subtitle">Discover our comprehensive suite of 100 innovative products</p>
+            <h2 class="section-title">Our Projects (11 Launched 🚀, 89 More to Go 💪)</h2>
+            <p class="section-subtitle">Discover our real projects and comprehensive suite of innovative solutions</p>
             
             <div class="products-filter">
-                <button class="filter-btn active" data-category="all">All Products</button>
-                <button class="filter-btn" data-category="software">Software</button>
-                <button class="filter-btn" data-category="mobile">Mobile Apps</button>
-                <button class="filter-btn" data-category="web">Web Solutions</button>
-                <button class="filter-btn" data-category="ai">AI & ML</button>
+                <button class="filter-btn active" data-category="all">All Projects</button>
+                <button class="filter-btn" data-category="active">Active</button>
+                <button class="filter-btn" data-category="failed">Failed</button>
+                <button class="filter-btn" data-category="upcoming">Upcoming</button>
+
             </div>
 
             <div class="products-grid" id="productsGrid">
@@ -128,33 +203,77 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Connect With Us</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>info@gohiltechempire.com</p>
+            <h2 class="section-title">What Other Say About Us</h2>
+            <p class="section-subtitle"></p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Gohil Tech Empire transformed our business operations with their innovative software solutions. The team's expertise and dedication to quality exceeded our expectations."</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+1 (555) 123-4567</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Innovation Hub, Tech District</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>CEO, TechCorp Solutions</span>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Their mobile app development expertise helped us launch a successful product in record time. The attention to detail and user experience design is outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>CTO, InnovateMobile</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The AI-powered analytics platform they built for us has revolutionized our decision-making process. It's like having a crystal ball for business insights."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <span>Data Scientist, AnalyticsPro</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,24 +285,34 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Gohil Tech Empire</h3>
-                    <p>Empowering the future through innovative technology solutions.</p>
+                    <p>Journey to Build and Launch 100 Projects</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#directors">Directors</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#team">Team</a></li>
                         <li><a href="#products">Products</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#products">Software Development</a></li>
+                        <li><a href="#products">Mobile Apps</a></li>
+                        <li><a href="#products">Web Solutions</a></li>
+                        <li><a href="#products">AI & Machine Learning</a></li>
+                        <li><a href="#products">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest innovations and tech insights.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -192,6 +321,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating Action Button -->
+    <div class="floating-action">
+        <div class="floating-btn" id="scrollToTop" title="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
