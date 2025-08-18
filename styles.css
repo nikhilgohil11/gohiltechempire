@@ -870,11 +870,23 @@ body {
     color: white;
     box-shadow: var(--shadow-md);
     flex-shrink: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .product-logo-emoji {
     font-size: 2.5rem;
     line-height: 1;
+}
+
+/* Product logo image fill */
+.product-logo img,
+.product-logo .product-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
 }
 
 .product-icon {
@@ -1011,6 +1023,20 @@ body {
 .product-link:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
+}
+
+.product-link.disabled {
+    background: #6b7280;
+    color: #9ca3af;
+    cursor: not-allowed;
+    opacity: 0.7;
+    transform: none;
+    box-shadow: var(--shadow-sm);
+}
+
+.product-link.disabled:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
 }
 
 /* Contact Section */
@@ -1372,7 +1398,8 @@ body {
 
 /* Enhanced Card Hover Effects */
 .team-member-card:hover .team-member-image,
-.product-card:hover .product-icon {
+.product-card:hover .product-icon,
+.product-card:hover .product-logo {
     transform: scale(1.1) rotate(5deg);
     transition: all 0.3s ease;
 }
@@ -1984,6 +2011,39 @@ body.nav-open {
     .team-member-card {
         background: var(--bg-primary);
         border-color: var(--border-light);
+    }
+    
+    /* Darker header text for better readability */
+    .navbar {
+        background: rgba(26, 32, 44, 0.98) !important;
+        border-bottom-color: #4a5568 !important;
+        backdrop-filter: blur(20px);
+    }
+    
+    /* Override scroll-based background changes in dark mode */
+    .navbar.scrolled {
+        background: rgba(26, 32, 44, 0.98) !important;
+        border-bottom-color: #4a5568 !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+    }
+    
+    .nav-menu a {
+        color: #cbd5e0;
+    }
+    
+    .nav-menu a:hover {
+        color: #90cdf4;
+    }
+    
+    .nav-logo h2 {
+        background: linear-gradient(135deg, #90cdf4 0%, #63b3ed 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .hamburger span {
+        background: #cbd5e0;
     }
 }
 
