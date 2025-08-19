@@ -751,6 +751,37 @@ body {
     transform: translateY(-2px);
 }
 
+/* Team Member Social Links */
+.team-member-social {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--gradient-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    color: white;
+}
+
+.social-link i {
+    font-size: 1rem;
+}
+
 /* Products Section */
 .products {
     padding: 6rem 0;
@@ -862,7 +893,7 @@ body {
     width: 80px;
     height: 80px;
     background: var(--gradient-primary);
-    border-radius: 50%;
+    border-radius: var(--radius-lg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -885,7 +916,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: var(--radius-lg);
     display: block;
 }
 
