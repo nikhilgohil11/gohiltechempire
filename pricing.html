@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Gohil Tech Empire</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Gohil Tech Empire</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Projects</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="index.html#subscribe">Subscribe</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Header -->
+    <section class="pricing-header">
+        <div class="container">
+            <h1 class="pricing-title">All Our Products & Pricing</h1>
+            <p class="pricing-subtitle">Explore our complete product portfolio with pricing information. From free tools to premium services, find the perfect solution for your needs.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Grid -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="pricing-grid" id="pricingGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Can I switch between plans?</h3>
+                    <p>Yes, you can upgrade or downgrade your plan at any time. Please check the product page for details.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is there a free trial?</h3>
+                    <p>Most of our products offer a free trial period. Check individual product pages for details.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept all major credit cards for all products and services plan.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer refunds?</h3>
+                    <p>We offer a 30-day money-back guarantee for all our products and services if user has not used the product/services. Please check the product page for details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="pricing-cta">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Join thousands of satisfied customers who trust our products</p>
+            <a href="index.html#contact" class="cta-button primary">
+                <span>Contact Us</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gohil Tech Empire</h3>
+                    <p>Journey to Build and Launch 100 Projects</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="privacy_policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                        <li><a href="terms_conditions.html" target="_blank" rel="noopener noreferrer">Terms and Conditions</a></li>
+                        <li><a href="https://x.com/nikhilgohil11" target="_blank" rel="noopener noreferrer">@nikhilgohil11</a></li>
+                        <li><a href="https://x.com/vikasgohil2" target="_blank" rel="noopener noreferrer">@vikasgohil2</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with our latest products and insights</p>
+                    <form action="https://app.convertkit.com/forms/8435254/subscriptions" method="post" class="newsletter-form">
+                        <input type="email" name="email_address" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gohil Tech Empire. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="floating-action">
+        <button class="floating-btn" id="scrollToTop" title="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Pricing page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Product data - same as main page
+            const products = [
+                // Real Projects (5)
+                { name: "Uiworks.io", category: "completed", icon: "fas fa-mobile-alt", link: "https://uiworks.io", status: "running", description: "Get 100% UI development in Swift & ObjC for iOS, iPad, macOS, visionOS app development", users: 13, mrr: 8500, logo: "images/uiworks.png", price: "$499/month" },
+                { name: "@visionOSfan", category: "completed", icon: "fas fa-newspaper", link: "https://visionos.fan", status: "running", description: "Stay Ahead with visionOS: The Only Source You Need for Apple Vision Pro Updates", users: 1256, mrr: 150, logo: "images/visionosfan.png", price: "$0" },
+                { name: "MADMBA.com", category: "completed", icon: "fas fa-graduation-cap", link: "https://madmba.com", status: "running", description: "Mobile app development mastery program", users: 53, mrr: 530, logo: "images/madmba.png", price: "$49/month" },
+                { name: "Daily Dopamine Pro", category: "completed", icon: "fas fa-graduation-cap", link: "https://dailydopamine.pro", status: "running", description: "Boost productivity with Daily Dopamine Pro - A task management app designed for ADHD minds.", users: 751, mrr: 0, logo: "images/dailydopaminepro.png", price: "Free" },
+                { name: "MRR SHOW", category: "completed", icon: "fas fa-graduation-cap", link: "https://MRR.SHOW", status: "running", description: "Only Monthly Recurring Revenue (MRR) SHOW for IndieHackers and SaaS Founders", users: 6, mrr: 0, logo: "images/mrr_show.png", price: "Free" },
+                { name: "XCLOC Translator", category: "completed", icon: "fas fa-paint-brush", link: "https://www.producthunt.com/products/uiworks/launches/xcloc-translator", status: "running", description: "App helps in localization your existing iOS, iPad, macOS, tvOS, watchOS, visionOS apps.", users: 210, mrr: 0, logo: "images/xcloc_translator.png", price: "Free" },
+                { name: "Cross Vs Native", category: "failed", icon: "fas fa-balance-scale", link: "https://crossvsnative.com", status: "failed", description: "Mobile App development Platform selection consultation", users: 0, mrr: 0, logo: "images/cross_vs_native.png", price: "Closed" },
+                { name: "Xpat Space", category: "upcoming", icon: "fas fa-balance-scale", link: "https://xpat.space", status: "upcoming", description: "Find your people abroad. Let's connect with expats from your hometown. Never Feel Alone in a New City Again.", users: 17, mrr: 0, logo: "images/xpat_space.png", price: "Coming Soon" },
+                { name: "AI Academy", category: "upcoming", icon: "fas fa-balance-scale", link: "https://urchin-app-4oy5e.ondigitalocean.app", status: "upcoming", description: "Traditional Academy run by AI agents", users: 2, mrr: 2500, logo: "images/ai_academy.png", price: "$499/month" },
+                { name: "AI for 10X", category: "upcoming", icon: "fas fa-robot", link: "https://aifor10x.com", status: "upcoming", description: "rapid-fire AI hacks you can implement in under 15 minutes each.", users: 6, mrr: 0, logo: "images/ai_for_10x.png", price: "$29/month" },
+            ];
+
+            // Function to create pricing card
+            function createPricingCard(product) {
+                const statusBadge = product.status ? `
+                    <div class="status-badge ${product.status}">
+                        <span>${product.status === 'running' ? '🟢 Running' : product.status === 'failed' ? '🔴 Failed' : '🟡 Upcoming'}</span>
+                    </div>
+                ` : '';
+
+                const description = product.description ? `<p class="product-description">${product.description}</p>` : '';
+
+                // Add price for products
+                const priceDisplay = product.price ? `
+                    <div class="pricing-metrics">
+                        <div class="metric">
+                            <i class="fas fa-tag"></i>
+                            <span>${product.price}</span>
+                        </div>
+                    </div>
+                ` : '';
+
+                // Determine button text and action based on status
+                let buttonHtml = '';
+                if (product.status === 'failed') {
+                    buttonHtml = `<span class="pricing-btn secondary disabled">Project Closed</span>`;
+                } else if (product.status === 'upcoming') {
+                    buttonHtml = `<a href="${product.link}" class="pricing-btn secondary" target="_blank">Join Waitlist</a>`;
+                } else {
+                    buttonHtml = `<a href="${product.link}" class="pricing-btn primary" target="_blank">Get Started</a>`;
+                }
+
+                return `
+                    <div class="pricing-card ${product.status === 'upcoming' ? 'upcoming' : ''}" data-category="${product.category}">
+                        <div class="pricing-header">
+                            <div class="pricing-hero-image">
+                                ${product.logo && (product.logo.startsWith('/images/') || product.logo.startsWith('images/')) ?
+                                    `<img src="${product.logo.startsWith('/') ? product.logo : '/' + product.logo}" alt="${product.name} Logo">` :
+                                    `<div class="pricing-hero-fallback">${product.logo || product.icon || '🚀'}</div>`
+                                }
+                                ${statusBadge}
+                            </div>
+                        </div>
+                        <div class="pricing-content">
+                            <h3 class="product-name">${product.name}</h3>
+                            ${description}
+                            ${priceDisplay}
+                        </div>
+                        <div class="pricing-actions">
+                            ${buttonHtml}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Function to render pricing cards
+            function renderPricingCards() {
+                const pricingGrid = document.getElementById('pricingGrid');
+                pricingGrid.innerHTML = products.map(product => createPricingCard(product)).join('');
+            }
+
+            // Initialize pricing cards on page load
+            renderPricingCards();
+
+            // Scroll to top functionality
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            if (scrollToTopBtn) {
+                scrollToTopBtn.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+
+                // Show/hide scroll to top button
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        scrollToTopBtn.style.opacity = '1';
+                        scrollToTopBtn.style.pointerEvents = 'all';
+                    } else {
+                        scrollToTopBtn.style.opacity = '0';
+                        scrollToTopBtn.style.pointerEvents = 'none';
+                    }
+                });
+            }
+
+            // Mobile navigation
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                    document.body.classList.toggle('nav-open');
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                        document.body.classList.remove('nav-open');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
