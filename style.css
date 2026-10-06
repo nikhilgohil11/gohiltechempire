@@ -894,8 +894,9 @@ footer {
 
   .contact-facts {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 64px;
+    gap: 32px 48px;
   }
 
   .contact-email {
